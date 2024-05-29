@@ -14,11 +14,10 @@ let noiseOffset = 0.0;
 let noiseScale = 0.1; // Noise scale for the wave effect
 
 class AnimatedCircle {
-  constructor(x, y, d, colors, startAngle, hasArc, styleType) {
+  constructor(x, y, d, startAngle, hasArc, styleType) {
     this.x = x;
     this.y = y;
     this.d = d;
-    this.colors = colors;
     this.startAngle = startAngle;
     this.hasArc = hasArc;
     this.styleType = styleType;
@@ -32,11 +31,12 @@ class AnimatedCircle {
 
   draw() {
     let radii = [this.d, this.d * 0.55, this.d * 0.5, this.d * 0.25, this.d * 0.15, this.d * 0.1, this.d * 0.05]; // Sizes of the main and inner circles
+    let colors = generateColorsForCircle(this.x, this.y);
 
     if (this.isSpecial) {
-      drawSpecialCirclePattern(this.x, this.y, radii, this.colors, this.styleType);
+      drawSpecialCirclePattern(this.x, this.y, radii, colors, this.styleType);
     } else {
-      drawCirclePattern(this.x, this.y, radii, this.colors, this.styleType);
+      drawCirclePattern(this.x, this.y, radii, colors, this.styleType);
     }
   }
 }
@@ -58,7 +58,6 @@ function setup() {
         x + offsetX,
         y + offsetY,
         circleDiameter,
-        generateColors(),
         angle,
         hasArc,
         styleType
@@ -215,6 +214,16 @@ function generateColors() {
   return colors;
 }
 
+function generateColorsForCircle(x, y) {
+  let colors = [];
+  for (let i = 0; i < 8; i++) {
+    let n = noise(x * 0.02, y * 0.02, frameCount * 0.02 + i * 100);
+    let c = color(map(n, 0, 1, 50, 255), map(n, 0, 1, 100, 150), map(n, 0, 1, 150, 200), 180);
+    colors.push(c);
+  }
+  return colors;
+}
+
 function fillDotsOnCircle(cx, cy, outerRadius, innerRadius) {
   let angleStep = TWO_PI / 25; // Number of white dots
   for (let angle = 0; angle < TWO_PI; angle += angleStep) {
@@ -231,9 +240,9 @@ function drawGoldZShape(cx, cy, outerRadius, innerRadius) {
   let angle = random(TWO_PI);
   for (let i = 0; i < goldLineSpikes; i++) {
     let x1 = cx + outerRadius * cos(angle);
-    let y1 = cy + outerRadius * sin(angle);
+    let y1 = cx + outerRadius * sin(angle);
     let x2 = cx + innerRadius * cos(angle + angleStep / 2);
-    let y2 = cy + innerRadius * sin(angle + angleStep / 2);
+    let y2 = cx + innerRadius * sin(angle + angleStep / 2);
     let x3 = cx + outerRadius * cos(angle + angleStep);
     let y3 = cx + outerRadius * sin(angle + angleStep);
     stroke(255, 215, 0); // Gold color
@@ -290,3 +299,4 @@ function drawPatternOnRing(cx, cy, radius) {
     ellipse(x, y, 15, 15); // Draw pattern
   }
 }
+
