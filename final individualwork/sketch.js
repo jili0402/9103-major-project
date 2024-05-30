@@ -89,13 +89,13 @@ class AnimatedCircle {
     this.hasArc = hasArc;
     this.styleType = styleType;
     this.isSpecial = false;
-  }
+  }//
 
   draw() {
     let radii = [this.d, this.d * 0.55, this.d * 0.5, this.d * 0.25, this.d * 0.15, this.d * 0.1, this.d * 0.05]; // Sizes of the main and inner circles
     for (let i = 0; i < radii.length; i++) {
-      let noiseX = this.x + map(noise(frameCount / 100 + i), 0, 1, -5, 5);
-      let noiseY = this.y + map(noise(frameCount / 100 + i + 1000), 0, 1, -5, 5);
+      let noiseX = this.x + map(noise(frameCount / 100 + i), 0, 1, -50, 50);
+      let noiseY = this.y + map(noise(frameCount / 100 + i + 1000), 0, 1, -50, 50);
 
       fill(this.colors[i % this.colors.length]); // Set fill color
       ellipse(noiseX, noiseY, radii[i], radii[i]); // Draw circle
