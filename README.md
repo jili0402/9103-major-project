@@ -24,22 +24,35 @@ My interactive artwork creates a dynamic and visually engaging experience by uti
 
 - **2.3 References to inspiration for animating your individual code**
 
-![Changed flower effect1](assets/fleur0.jpg)
-![Changed flower effect2](assets/fleur2.jpg)
-![Code screenshot1](assets/codecut1.png)
-![Code screenshot2](assets/codecut2.png)
+**Optical Art:** The use of repetitive geometric patterns and contrasting colors to create optical illusions is a significant influence. This can be seen in the concentric circles and zigzag patterns.
 
-[The final generated animation](https://blog.displate.com/optical-illusion-art/)
+![Optical Art1](assets/OpArt1.png)
 
-[The final](https://www.dreamstime.com/stock-illustration-green-blue-abstract-circle-element-optical-art-style-concentric-circle-shapes-gradient-background-mandala-calming-image78370643)
+![Optical Art2](assets/OpArt2.png)
+
+**Nature-Inspired Patterns:** The fluid and organic motion is inspired by natural phenomena such as water ripples and plant growth, which are often modeled using Perlin noise in computer graphics.
+
+![ripples](assets/ripples.png)
+
+**Generative Art:** The concept of using algorithms to generate art programmatically is central to this piece. Artists like Vera Molnár and Casey Reas have explored similar ideas in their works.
+
+![Vera Molnár](assets/Artist1.png)
+
+![Casey Reas](assets/Artist2.png)
+
+**Reference Links：**
+
+[Optical Art1](https://blog.displate.com/optical-illusion-art/)
+
+[Optical Art2](https://www.dreamstime.com/stock-illustration-green-blue-abstract-circle-element-optical-art-style-concentric-circle-shapes-gradient-background-mandala-calming-image78370643)
 
 
-[chitang](https://www.scienceabc.com/eyeopeners/what-causes-ripples-in-water.html)
+[water ripples](https://www.scienceabc.com/eyeopeners/what-causes-ripples-in-water.html)
 
-[yishujia1](https://www.researchgate.net/figure/Vera-Molnar-Hommage-a-Barbaud-Tribute-to-Barbaud-1974-Plotter-drawing-ink-on_fig1_338896073)
+[Vera Molnár](https://www.researchgate.net/figure/Vera-Molnar-Hommage-a-Barbaud-Tribute-to-Barbaud-1974-Plotter-drawing-ink-on_fig1_338896073)
 
 
-[yishujia2](https:https://www.mutualart.com/Artist/Casey-Reas/9FE1DB446CCAE7EA)
+[Casey Reas](https:https://www.mutualart.com/Artist/Casey-Reas/9FE1DB446CCAE7EA)
 
 - **2.4 Technical explanation of how your individual code works to animate the image**
 
