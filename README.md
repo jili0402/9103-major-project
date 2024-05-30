@@ -52,7 +52,7 @@ My interactive artwork creates a dynamic and visually engaging experience by uti
 [Vera Molnár](https://www.researchgate.net/figure/Vera-Molnar-Hommage-a-Barbaud-Tribute-to-Barbaud-1974-Plotter-drawing-ink-on_fig1_338896073)
 
 
-[Casey Reas](https:https://www.mutualart.com/Artist/Casey-Reas/9FE1DB446CCAE7EA)
+[Casey Reas](https://www.mutualart.com/Artist/Casey-Reas/9FE1DB446CCAE7EA)
 
 - **2.4 Technical explanation of how your individual code works to animate the image**
 
