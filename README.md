@@ -6,7 +6,7 @@ This is my final individual work introduction.
 
 My interactive artwork creates a dynamic and visually engaging experience by utilizing the Berlin noise function to animate various circles and patterns. The code generates a grid of circles with different styles and colors, creating a vibrant display that continuously evolves over time. By applying Perlin noise, each frame introduces subtle changes in the positions and properties of the circles, making the artwork come alive with fluid and organic motion.
 
-## Part 2: Details of your individual approach to animating the group code
+## Part 2: Details of my individual approach to animating the group code
 
 - **2.1 I choose Perlin noise to drive my individual code**
 
@@ -22,7 +22,7 @@ My interactive artwork creates a dynamic and visually engaging experience by uti
 
   - *Additional AnimatedCircle Class*: The newly added AnimatedCircle class provides additional animated elements within each circle, such as dynamic patterns and layered rings.
 
-- **2.3 References to inspiration for animating your individual code**
+- **2.3 References to inspiration for animating my individual code**
 
 **Optical Art:** The use of repetitive geometric patterns and contrasting colors to create optical illusions is a significant influence. This can be seen in the concentric circles and zigzag patterns.
 
