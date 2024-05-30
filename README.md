@@ -34,7 +34,7 @@ My interactive artwork creates a dynamic and visually engaging experience by uti
 
 ![ripples](assets/ripples.png)
 
-**Generative Art:** The concept of using algorithms to generate art programmatically is central to this piece. Artists like Vera Molnár and Casey Reas have explored similar ideas in their works.
+**Generative Art:** The concept of using algorithms to generate art programmatically is central to this major project. Artists like Vera Molnár and Casey Reas have explored similar ideas in their works.
 
 ![Vera Molnár](assets/Artist1.png)
 
@@ -54,7 +54,7 @@ My interactive artwork creates a dynamic and visually engaging experience by uti
 
 [Casey Reas](https://www.mutualart.com/Artist/Casey-Reas/9FE1DB446CCAE7EA)
 
-- **2.4 Technical explanation of how your individual code works to animate the image**
+- **2.4 Technical explanation of how my individual code works to animate the image**
 
 *Perlin Noise: The core technique used to animate the properties is Perlin noise, which generates smooth and continuous random values that are ideal for creating natural-looking motion.*
 
